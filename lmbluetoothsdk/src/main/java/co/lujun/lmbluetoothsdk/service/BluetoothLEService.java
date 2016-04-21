@@ -176,7 +176,7 @@ public class BluetoothLEService {
                             mBluetoothGatt.setCharacteristicNotification(characteristic, true);
                         }
                         if (((charaProp & BluetoothGattCharacteristic.PERMISSION_WRITE)
-                                | (charaProp & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE)) > 0){
+                                | (charaProp & BluetoothGattCharacteristic.PROPERTY_WRITE)) > 0){
                             mWriteCharacteristic = characteristic;
                         }
                     }
